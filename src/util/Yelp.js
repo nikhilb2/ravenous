@@ -10,7 +10,7 @@ const Yelp = {
           id:business.id,
           imageSrc:business.image_url,
           name:business.name,
-          address:business.location.address1,
+          address:business.location.address1+", "+business.location.address2,
           city:business.location.city,
           state:business.location.state,
           zipCode:business.location.zipcode,
@@ -18,7 +18,7 @@ const Yelp = {
           rating:business.rating,
           reviewCount:business.review_count
         })
-      )}console.log('error')
+      )}
   })
 }
 }
