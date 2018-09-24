@@ -26,10 +26,9 @@ class App extends React.Component {
     return <div className="App">
   <h1>ravenous</h1>
   <SearchBar searchYelp={this.searchYelp} />
-  <BusinessList businessesProp={this.state.business}/>
+  <BusinessList businessesProp={this.state.businesses}/>
 </div>
     ;
   }
 }
-
 export default App;
